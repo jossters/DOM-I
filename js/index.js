@@ -40,3 +40,52 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+//Header Nav
+const link = document.querySelectorAll('nav a');
+link[0].textContent = siteContent["nav"]["nav-item-1"];
+link[1].textContent = siteContent["nav"]["nav-item-2"];
+link[2].textContent = siteContent["nav"]["nav-item-3"];
+link[3].textContent = siteContent["nav"]["nav-item-4"];
+link[4].textContent = siteContent["nav"]["nav-item-5"];
+link[5].textContent = siteContent["nav"]["nav-item-6"];
+
+//Cta image
+const cta = document.getElementById("cta-img");
+cta.setAttribute('src', siteContent["cta"]["img-src"]);
+
+//Title
+const title = document.querySelector("h1");
+title.textContent = siteContent["cta"]["h1"];
+
+//Button
+const butt = document.querySelector("button")
+butt.textContent = siteContent["cta"]["button"];
+
+//All H4 Tags
+const allh4 = document.querySelectorAll("h4")
+allh4[0].textContent = siteContent["main-content"]["features-h4"];
+allh4[1].textContent = siteContent["main-content"]["about-h4"];
+allh4[2].textContent = siteContent["main-content"]["services-h4"];
+allh4[3].textContent = siteContent["main-content"]["product-h4"];
+allh4[4].textContent = siteContent["main-content"]["vision-h4"];
+allh4[5].textContent = siteContent["contact"]["contact-h4"]
+
+// All P Tags
+const allp = document.querySelectorAll("p")
+allp[0].textContent = siteContent["main-content"]['features-content'];
+allp[1].textContent = siteContent["main-content"]['about-content'];
+allp[2].textContent = siteContent["main-content"]['services-content'];
+allp[3].textContent = siteContent["main-content"]['product-content'];
+allp[4].textContent = siteContent["main-content"]['vision-content'];
+allp[5].textContent = siteContent["contact"]["address"]
+allp[6].textContent = siteContent["contact"]["phone"]
+allp[7].textContent = siteContent["contact"]["email"]
+allp[8].textContent = siteContent["footer"]["copyright"]
+
+
+// Middle image
+const middleimg = document.getElementById("middle-img")
+middleimg.setAttribute("src",siteContent ["main-content"]["middle-img-src"])
+
+// Contact
